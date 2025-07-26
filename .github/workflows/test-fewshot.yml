@@ -1,0 +1,42 @@
+name: Run FewShotLib Tests
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '**.py'
+      - '.github/workflows/test-fewshot.yml'
+  pull_request:
+    paths:
+      - '**.py'
+      - '.github/workflows/test-fewshot.yml'
+
+jobs:
+  run-tests:
+    runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        shell: bash
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.12.7'
+
+    - name: Install Dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install torch torchvision pillow
+
+    - name: Run Feature Extraction Test
+      run: |
+        python testing/test1.py
+
+    - name: Run Prediction Test
+      run: |
+        python testing/test2.py
