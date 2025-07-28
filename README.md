@@ -84,7 +84,7 @@ This project is licensed under a **Custom Research and Educational Use License**
 
 You are permitted to use, copy, modify, and distribute this software **only for research and educational purposes**. **Commercial use is strictly prohibited** without prior written permission from the author.
 
-See the [LICENSE](./LICENSE) file for full terms.
+See the [LICENSE](./LICENSE.txt) file for full terms.
 
 For commercial inquiries, contact: [gomesrohit92@gmail.com](mailto:gomesrohit92@gmail.com)
 
