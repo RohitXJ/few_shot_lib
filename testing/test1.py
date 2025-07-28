@@ -9,7 +9,7 @@ MODEL_PATH = "testing/model/fewshot_model.pt"  # Change path if needed
 def test_model_loading():
     try:
         classifier = FewShotClassifier(model_path=MODEL_PATH)
-        print("✅ Model loaded successfully.")
+        print("Model loaded successfully.")
 
         print(f"Encoder: {type(classifier.encoder)}")
         print(f"Prototypes shape: {classifier.prototypes.shape}")
@@ -19,7 +19,7 @@ def test_model_loading():
             print("No labels found in checkpoint.")
 
     except Exception as e:
-        print(f"❌ Model loading failed: {e}")
+        print(f"Model loading failed: {e}")
 
 if __name__ == "__main__":
     test_model_loading()
