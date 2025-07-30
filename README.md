@@ -25,7 +25,7 @@ Or, if not yet published, install locally from source:
 
 ```
 
-git clone https://github.com/RohitXJ/few-shot-lib.git
+git clone https://github.com/RohitXJ/few_shot_lib.git
 cd fewshotlib
 pip install .
 
